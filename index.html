@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- adding tailwind link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- adding tailwind config -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+
+    <title>Landing Page</title>
+
+    <!-- adding css link -->
+    <link rel="stylesheet" href="style.css" type="text/css" />
+  </head>
+  <body>
+    <!-- adding header section -->
+    <div class="header">
+      <nav class="navbar">
+        <div class="navbar-logo">Safe Haven Furniture</div>
+
+        <div>
+          <form><input type="text" name="search" placeholder="Search" /></form>
+        </div>
+
+        <div class="nav-list">
+          <ul class="navlinks">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <!-- adding info section -->
+    <section>
+      <div class="info">
+        <div>
+          <h2 class="info-header">Comfortable Decor Is Our Specialty</h2>
+          <p class="info-p">
+            We sell comfortable, homey and office friendly furnitures.
+            <br />Make your comfort zone your heaven on earth. Your home is your
+            kingdom. <br />
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores nam
+            qui nostrum. <br />
+            Ipsa eveniet quam aperiam inventore tempore atque explicabo
+            nobis,<br />
+            est esse dolores accusantium molestias pariatur nisi doloremque
+            fuga.
+          </p>
+
+          <p class="info-next">Enjoy Shopping With Us</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- adding service section -->
+    <div>
+      <div class="icons-section">
+        <!--  -->
+        <div>
+          <ion-icon name="download-outline" class="w-[30px] h-[60px]">
+          </ion-icon>
+          <p class="font-bold">
+            Download Our Catalogue and get full picture of all the splendid
+            items you can purchase.
+          </p>
+        </div>
+        <!--  -->
+        <div>
+          <ion-icon name="cart-outline" class="w-[30px] h-[60px]"> </ion-icon>
+          <p class="font-bold">
+            Add items you want to purchase to your cart. Store items you might
+            be interested in here so that you can come back at a later date to
+            view.
+          </p>
+        </div>
+        <!--  -->
+        <div>
+          <ion-icon name="bag-check-outline" class="w-[30px] h-[60px]">
+          </ion-icon>
+          <p class="font-bold">
+            Check out items you want to purchase and confirm your order with us
+            here. Be sure to rate our services as well.
+          </p>
+        </div>
+        <!--  -->
+        <div>
+          <ion-icon name="wallet-outline" class="w-[30px] h-[60px]"> </ion-icon>
+          <p class="font-bold">
+            Pay for all your purchases here. Select from our different payment
+            options. Whatever payment option suits you.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- adding product section -->
+    <section class="product-section">
+      <div class="w-full h-[100vh]">
+        <div id="product-text">
+          <h2 class="text-center text-[30px] font-bold">Our Products</h2>
+          <p class="text-center text-lg font-bold mb-[30px]">
+            Quality Beyond Your Wildest Dreams
+          </p>
+        </div>
+
+        <!-- adding product image -->
+        <div class="max-w-[768px] m-auto grid grid-cols-1 md:grid-cols-4 gap-8">
+          <!-- card1 -->
+          <div
+            class="w-full shadow-xl shadow-gray-400 rounded-xl p-4 hover:scale-105 duration-300"
+          >
+            <img
+              src="https://media.istockphoto.com/id/1294546569/photo/teak-wood.jpg?s=2048x2048&w=is&k=20&c=Csj3iqM0wRt1BNxg-tSh0yeUYq44Ek2KfOh-ZvkxL1M="
+              alt="table"
+              width="100px"
+              height="200px"
+            />
+            <h4 class="font-bold">Mahogany Table</h4>
+            <p>Beautiful rich wooden table <br />$1.99</p>
+            <button
+              class="py-1 px-2 rounded-md text-[#fff] border-2 bg-[#b33b72] font-bold hover:text-[#b33b72] hover:bg-[#fff] hover:border-[#b33b72]"
+            >
+              Shop Now
+            </button>
+          </div>
+
+          <!-- card2 -->
+          <div
+            class="w-full shadow-xl shadow-gray-400 rounded-xl p-4 hover:scale-105 duration-300"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1542728928-1413d1894ed1?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="table"
+              width="100px"
+              height="200px"
+            />
+            <h4 class="font-bold">Gold Lamp</h4>
+            <p>Beautiful gold bedside lamp <br />$1.99</p>
+            <button
+              class="py-1 px-2 rounded-md text-[#fff] border-2 bg-[#b33b72] font-bold hover:text-[#b33b72] hover:bg-[#fff] hover:border-[#b33b72]"
+            >
+              Shop Now
+            </button>
+          </div>
+
+          <!-- card3 -->
+          <div
+            class="w-full shadow-xl shadow-gray-400 rounded-xl p-4 hover:scale-105 duration-300"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1581539250439-c96689b516dd?q=80&w=930&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="table"
+              width="100px"
+              height="200px"
+            />
+            <h4 class="font-bold">Oak Chair</h4>
+            <p>Beautiful rich wooden chair <br />$1.99</p>
+            <button
+              class="py-1 px-2 rounded-md text-[#fff] border-2 bg-[#b33b72] font-bold hover:text-[#b33b72] hover:bg-[#fff] hover:border-[#b33b72]"
+            >
+              Shop Now
+            </button>
+          </div>
+
+          <!-- card4 -->
+          <div
+            class="w-full shadow-xl shadow-gray-400 rounded-xl p-4 hover:scale-105 duration-300"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1539975611936-f0d1221cfd16?q=80&w=1335&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="table"
+              width="100px"
+              height="200px"
+            />
+            <h4 class="font-bold">Paintings</h4>
+            <p>
+              Beautiful rich art to adorn your walls.
+              <br />$1.99
+            </p>
+            <button
+              class="py-1 px-2 rounded-md text-[#fff] border-2 bg-[#b33b72] font-bold hover:text-[#b33b72] hover:bg-[#fff] hover:border-[#b33b72]"
+            >
+              Shop Now
+            </button>
+          </div>
+
+          <!-- card5 -->
+          <div
+            class="w-full shadow-xl shadow-gray-400 rounded-xl p-4 hover:scale-105 duration-300"
+          >
+            <img
+              src="https://media.istockphoto.com/id/688566626/photo/bookcase-with-rocking-chair.jpg?s=612x612&w=is&k=20&c=hPq2CM1B-81NoNI_5xBwltXxE3ZRVrzu-SFOS_VgAFE="
+              alt="table"
+              width="100px"
+              height="200px"
+            />
+            <h4 class="font-bold">Bookshelves</h4>
+            <p>Beautiful rich wooden bookshelves <br />$1.99</p>
+            <button
+              class="py-1 px-2 rounded-md text-[#fff] border-2 bg-[#b33b72] font-bold hover:text-[#b33b72] hover:bg-[#fff] hover:border-[#b33b72]"
+            >
+              Shop Now
+            </button>
+          </div>
+
+          <!-- card6 -->
+          <div
+            class="w-full shadow-xl shadow-gray-400 rounded-xl p-4 hover:scale-105 duration-300"
+          >
+            <img
+              src="https://media.istockphoto.com/id/1569543704/photo/tall-dry-pampas-ears-of-corn-in-a-clay-vase-decor-for-interiors-set-of-three-isolated-views.jpg?s=612x612&w=is&k=20&c=5pVsksa-ufrjVbigFwC8o7c-Fl_oZd5CCrE1Ula6G0s="
+              alt="vase"
+              width="100px"
+              height="200px"
+            />
+            <h4 class="font-bold">Ceramic Vase</h4>
+            <p>Beautiful rich ceramic vase <br />$1.99</p>
+            <button
+              class="py-1 px-2 rounded-md text-[#fff] border-2 bg-[#b33b72] font-bold hover:text-[#b33b72] hover:bg-[#fff] hover:border-[#b33b72]"
+            >
+              Shop Now
+            </button>
+          </div>
+
+          <!-- card7 -->
+          <div
+            class="w-full shadow-xl shadow-gray-400 rounded-xl p-4 hover:scale-105 duration-300"
+          >
+            <img
+              src="https://media.istockphoto.com/id/1271023669/photo/new-empty-bowl-isolated-on-white-background.jpg?s=612x612&w=is&k=20&c=TcLF1GDNrPU9XxDhJKKtmSkKjclbscR1nmkby_mKwgo="
+              alt="table"
+              width="100px"
+              height="200px"
+            />
+            <h4 class="font-bold">Center Bowls</h4>
+            <p>Beautiful rich center pieces <br />$1.99</p>
+            <button
+              class="py-1 px-2 rounded-md text-[#fff] border-2 bg-[#b33b72] font-bold hover:text-[#b33b72] hover:bg-[#fff] hover:border-[#b33b72]"
+            >
+              Shop Now
+            </button>
+          </div>
+
+          <!-- card8 -->
+          <div
+            class="w-full shadow-xl shadow-gray-400 rounded-xl p-4 hover:scale-105 duration-300"
+          >
+            <img
+              src="https://media.istockphoto.com/id/1500485322/photo/white-wall-interior-living-room-have-orange-leather-sofa-and-decoration-minimal.jpg?s=612x612&w=is&k=20&c=C8_H0EMJdPWU7lYufjQv4L_-7I5VdRPKkBdJojXloBw="
+              width="100px"
+              height="200px"
+            />
+            <h4 class="font-bold">Couch</h4>
+            <p>Beautiful rich leather couch<br />$1.99</p>
+            <button
+              class="py-1 px-2 rounded-md text-[#fff] border-2 bg-[#b33b72] font-bold hover:text-[#b33b72] hover:bg-[#fff] hover:border-[#b33b72]"
+            >
+              Shop Now
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- adding footer -->
+    <footer>Copyright &copy; 2024, Safe Haven Furniture</footer>
+    <!-- adding icons link -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
